@@ -205,13 +205,30 @@ Description: 简单的配置存储系统 - 图形界面编辑器
 
 `sudo apt install ranger`
 
-![image-20211121130324962](再次安装Ubuntu20.04 TLS记录  --20211120.assets/image-20211121130324962.png)
+![image-20211121130324962](README.assets/image-20211121130324962.png)
+
+使ranger内能够预览图片
+
+通过pip安装ueberzug，并且安装依赖
+
+```shell
+This will work with most terminals and even with tmux but requires X11. Doesn't work well with tabs.
+Install ueberzug. It can be installed with pip, in Debian the dependencies are: libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil A package is available for Arch Linux, maybe others as well.
+Add the following lines to your ~/.config/ranger/rc.conf.
+set preview_images true
+set preview_images_method ueberzug
+You can speed the image preview process up even more by replacing pillow with pillow-simd
+```
+
+
+
+![image-20211121211102922](README.assets/image-20211121211102922.png)
 
 ### 17. pavucontrol
 
 更改声音的输入输出设备
 
-![image-20211121130440444](再次安装Ubuntu20.04 TLS记录  --20211120.assets/image-20211121130440444.png)
+![image-20211121130440444](README.assets//image-20211121130440444.png)
 
 ### 18. variety(自动更换壁纸)
 
