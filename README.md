@@ -106,6 +106,30 @@ qq同上
 
 ​	给添加BT的trackers和DHT文件，要不达不到慢速。
 
+主程序命令行启动：aria2c --conf-path=/home/john/aria2.conf
+
+前台程序使用 aria2-ng(本地网页调用RPC)进行管理。
+
+**自动添加treackers脚本**
+
+```shell
+#!/bin/bash
+list=`wget -qO- https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt|awk NF|sed ":a;N;s/\n/,/g;ta"`
+if [ -z "`grep "bt-tracker" 自己的配置目录/aria2.conf`" ]; then
+    sed -i '$a bt-tracker='${list} 自己的配置目录/aria2.conf
+    echo add......
+else
+    sed -i "s@bt-tracker=.*@bt-tracker=$list@g" 自己的配置目录/aria2.conf
+    echo update......
+fi
+#授权脚本
+
+```
+
+
+
+
+
 ### 6. vmware和irtualbox
 
 - virtualbox安装官网安装就行；
