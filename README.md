@@ -292,6 +292,12 @@ Description: Wallpaper changer, downloader and manager
 
 ![image-20211124012403226](README.assets/image-20211124012403226.png)
 
+### 21. gitk
+
+查看git 提交版本的图形化软件，比较直观。
+
+![image-20211124020326340](README.assets/image-20211124020326340.png)
+
 ### 5. Gnome extensions 插件
 
 1、compiz windows effect
