@@ -284,6 +284,14 @@ Description: Wallpaper changer, downloader and manager
 
 好用的终端（仿真器）
 
+### 20. screenkey
+
+在屏幕上回显键盘上的输入
+
+`sudo apt install screenkey`
+
+![image-20211124012403226](README.assets/image-20211124012403226.png)
+
 ### 5. Gnome extensions 插件
 
 1、compiz windows effect
